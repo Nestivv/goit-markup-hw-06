@@ -508,7 +508,7 @@
     </footer>
 
     <!-- // Modal window-->
-    <div class="backdrop" data-modal>
+    <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button class="button-close" data-modal-close>
           <svg class="icon-close"><use class="icon" href="./images/icons.svg#close"></use></svg>
@@ -516,7 +516,7 @@
 
         <form class="register-form">
           <strong class="modal-title">Залиште свої дані, ми вам передзвонимо</strong>
-          
+
           <ul class="list">
             <li class="item">
               <label class="modal-field">
@@ -541,7 +541,7 @@
             <li class="item">
               <label class="modal-field">
                 <span class="modal-field-title">Пошта</span>
-                <input type="email" class="modal-field-input" nama="email"/>
+                <input type="email" class="modal-field-input" nama="email" />
                 <svg class="icon-box">
                   <use class="icon" href="./images/icons.svg#email"></use>
                 </svg>
@@ -561,15 +561,14 @@
           </ul>
 
           <label class="modal-confirmation">
-            <input class="modal-agreement" type="checkbox" name="agreemet">
-            <svg width="16px" height="15px">
-              <use href="./images/icons.svg#check"></use>
-              <use href="./images/icons.svg#uncheck"></use>
+            <input class="modal-agreement hidden" type="checkbox" name="agreemet" />
+            <svg class="checkbox-thumb" width="16px" height="15px">
+              <use class="icon-check" href="./images/icons.svg#check"></use>
+              <use class="icon-uncheck" href="./images/icons.svg#uncheck"></use>
             </svg>
 
-            <span class="title"
-              >Погоджуюся з розсилкою та приймаю
-              <a class="link" href=""> Умови договору</a></span
+            <span class="text"
+              >Погоджуюся з розсилкою та приймаю <a class="link" href=""> Умови договору</a></span
             >
           </label>
 
