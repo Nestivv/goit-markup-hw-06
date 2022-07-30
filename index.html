@@ -420,9 +420,10 @@
       </section>
     </main>
 
-    <!-- // footer -->
+    <!-- // Footer -->
     <footer class="footer">
       <div class="container">
+        <!-- /Секция контактов -->
         <div class="section-contacts">
           <a href="./index.html" class="logo-link">Web<span class="logo-color">Studio</span></a>
 
@@ -438,6 +439,7 @@
           </address>
         </div>
 
+        <!-- /Секция социальных ссылок -->
         <div class="section-links">
           <h2 class="join-title">Присоединяйтесь</h2>
           <ul class="social-links list">
@@ -488,15 +490,95 @@
             </li>
           </ul>
         </div>
+
+        <!-- /Форма подписки -->
+        <div class="footer-form">
+          <strong class="footer-form-title">Підпишіться на розсилку</strong>
+          <label class="footer-form-field">
+            <input type="email" class="footer-form-input" name="email" placeholder="E-mail" />
+            <button type="submit" class="footer-btn">
+              Підписатися
+              <svg class="footer-form-icon">
+                <use href="./images/icons.svg#telegram"></use>
+              </svg>
+            </button>
+          </label>
+        </div>
       </div>
     </footer>
-    <div class="backdrop is-hidden" data-modal>
+
+    <!-- // Modal window-->
+    <div class="backdrop" data-modal>
       <div class="modal">
         <button class="button-close" data-modal-close>
-          <svg class="icon-close"><use href="./images/icons.svg#close"></use></svg>
+          <svg class="icon-close"><use class="icon" href="./images/icons.svg#close"></use></svg>
         </button>
+
+        <form class="register-form">
+          <strong class="modal-title">Залиште свої дані, ми вам передзвонимо</strong>
+          
+          <ul class="list">
+            <li class="item">
+              <label class="modal-field">
+                <span class="modal-field-title">Ім'я</span>
+                <input type="text" class="modal-field-input" name="name" />
+                <svg class="icon-box">
+                  <use class="icon" href="./images/icons.svg#person"></use>
+                </svg>
+              </label>
+            </li>
+
+            <li class="item">
+              <label class="modal-field">
+                <span class="modal-field-title">Телефон</span>
+                <input type="tel" class="modal-field-input" name="tel" />
+                <svg class="icon-box">
+                  <use class="icon" href="./images/icons.svg#phone"></use>
+                </svg>
+              </label>
+            </li>
+
+            <li class="item">
+              <label class="modal-field">
+                <span class="modal-field-title">Пошта</span>
+                <input type="email" class="modal-field-input" nama="email"/>
+                <svg class="icon-box">
+                  <use class="icon" href="./images/icons.svg#email"></use>
+                </svg>
+              </label>
+            </li>
+
+            <li class="item">
+              <label class="modal-field">
+                <span class="modal-field-title">Коментар</span>
+                <textarea
+                  name="feedback"
+                  class="modal-field-textarea"
+                  placeholder="Введіть текст"
+                ></textarea>
+              </label>
+            </li>
+          </ul>
+
+          <label class="modal-confirmation">
+            <input class="modal-agreement" type="checkbox" name="agreemet">
+            <svg width="16px" height="15px">
+              <use href="./images/icons.svg#check"></use>
+              <use href="./images/icons.svg#uncheck"></use>
+            </svg>
+
+            <span class="title"
+              >Погоджуюся з розсилкою та приймаю
+              <a class="link" href=""> Умови договору</a></span
+            >
+          </label>
+
+          <button type="submit" class="modal-btn">Відправити</button>
+        </form>
       </div>
     </div>
+
+    <!-- // Scripts -->
     <script src="./js/modal.js"></script>
   </body>
 </html>
